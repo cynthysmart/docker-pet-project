@@ -1,0 +1,52 @@
+
+<%- include('header') -%> 
+
+<div>
+    <section class="content">
+        <header>
+            <img id="logo" src="/assets/pepsilogo.png" alt="pepsi logo"/>
+            <img class="hamburgerMenu" onclick="menuToggle();" src="/assets/hamburger.png">
+            <section class="menubar">
+                <ul>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </section>
+        </header>
+        <main>
+            <div class="main">
+                <div id="text">
+                    <h1 id="big">THAT'S WHAT <br><span>I LIKE</span></h1>
+                    <p style="color:rgb(233, 225, 225)">ALL YOUR FAVORITE FLAVORS. ALL RIGHT HERE.<br><br>
+                        Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors,
+                        get nutritional facts and check out ingredients for all our Pepsi products.
+                    </p>
+                    <button><a>VIEW ALL PRODUCTS</a></button>
+                </div>
+                <div class="images">
+                    <img id="pepsican" src="/assets/pepsican.png" alt="pepsi can">
+                </div>  
+                <div class="icon">
+                    <ul>
+                        <li><a class="fb" href="#"><img class="eachicon" src="/assets/fb.png" alt="fb icon"></a></li>
+                        <li><a href="#"><img class="eachicon" src="/assets/twitterlogo.png" alt="twitter icon"></a></li>
+                        <li><a href="#"><img class="eachicon" src="/assets/insta.png" alt="instagram icon"></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul class="footer">
+                <li><img class="smallcan" src="/assets/pepsican.png" onclick="imgSlider('pepsican.png');changeBgColor('#0062BE')" alt="pepsi can"/></li>
+                <li><img class="smallcan" src="/assets/ashpepsican.png" onclick="imgSlider('ashpepsican.png');changeBgColor('#E60c2c')" alt="pepsi can"/></li>
+                <li><img class="smallcan" src="/assets/blackpepsican.png" onclick="imgSlider('blackpepsican.png');changeBgColor('#1E1E1E')" alt="pepsi can"/></li>
+            </ul>
+        </footer>
+        
+    </section>
+    
+</div>
+
+<%- include('footer') -%> 
